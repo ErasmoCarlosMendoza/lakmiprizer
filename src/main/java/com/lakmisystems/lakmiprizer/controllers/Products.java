@@ -11,13 +11,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Products {
  
     @RequestMapping(method=RequestMethod.POST)
-    public @ResponseBody void addProduct() {
-        
+    @ResponseBody
+    public String addProduct() {
+        return "Agrega producto o servicio a BD";
     }
     
     @RequestMapping(value="/{id}", method=RequestMethod.DELETE)
-    public @ResponseBody void deleteProduct(@PathVariable Long id) {
-        
+    @ResponseBody
+    public String deleteProduct(@PathVariable Long id) {
+        return "Elimina un producto o servicio de la BD";
     } 
  
 }

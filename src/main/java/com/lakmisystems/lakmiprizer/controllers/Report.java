@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 public class Report {
 	@RequestMapping(method=RequestMethod.POST)
-    public @ResponseBody void createPrice() {
-        
+	@ResponseBody
+    public String createPrice() {
+        return "Crea el reporte de la cotizacion";
     }
 }
