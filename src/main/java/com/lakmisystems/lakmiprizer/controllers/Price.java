@@ -1,4 +1,4 @@
-package com.lakmiprizer.controllers;
+package com.lakmisystems.lakmiprizer.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,7 +25,8 @@ public class Price {
     }
     
     @RequestMapping(method=RequestMethod.GET)
-    public @ResponseBody void getPrice() {
-        
+    @ResponseBody
+    public  String getPrice() {
+        return "Esto es lo que voy a retornar";
     }
 }

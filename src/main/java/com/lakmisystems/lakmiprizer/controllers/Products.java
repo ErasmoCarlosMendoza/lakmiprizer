@@ -1,4 +1,4 @@
-package com.lakmiprizer.controllers;
+package com.lakmisystems.lakmiprizer.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
