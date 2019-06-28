@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/api/report")
 
-public class Report {
+public class ReportController {
 	@RequestMapping(method=RequestMethod.POST)
 	@ResponseBody
     public String createPrice() {

@@ -12,9 +12,9 @@ import com.lakmisystems.lakmiprizer.services.PriceService;
 
 @Controller
 @RequestMapping("/api/price")
-public class Price {
+public class PriceController {
 	@Autowired
-    @Qualifier("PriceService")
+    @Qualifier("priceService")
     PriceService priceService;
 	
 	@RequestMapping(method=RequestMethod.POST)
