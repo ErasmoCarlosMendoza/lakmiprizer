@@ -2,7 +2,7 @@ package com.lakmisystems.lakmiprizer.services;
 
 import org.springframework.stereotype.Service;
 
-@Service(value="PriceService")
+@Service("priceService")
 public class PriceService {
 	public Double getTotal() {
 		
